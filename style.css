@@ -1,0 +1,130 @@
+/* html {
+  height:100%;
+} */
+
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(102, 204, 51) 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.container {
+  display: inline;
+  list-style: none;
+  position: relative;
+  font-family: 'Kaisei Opti' sans-serif;
+}
+.navigation{
+  position: relative;
+  background-color: rgba(64, 166, 93, 0.578);
+  height: 40px;
+}
+.li{
+  position: relative;
+  top: 5px;
+  width: 100%;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  margin-right: 20px;
+  margin-left: 15px;
+ 
+}
+
+.li:hover{
+  background-color: hwb(107 9% 49%);
+  border: 1px solid hwb(107 9% 49%);
+  color: white;
+  padding: 8px;
+  font-size: 1.8rem;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  left: 25%;
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: 2px 4px;
+  color: rgb(15, 6, 24);
+}
+.tasklist {
+  position: relative;
+
+}
+li {
+  position: relative;
+  background-color: rgba(64, 166, 93, 0.878);
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 20px 20px;
+  height: fit-content;
+  list-style-type: none;
+  font-family: 'Kaisei Opti' sans-serif;
+  font-size: 15px;
+  transform: 2s;
+}
+
+li:hover{
+  scale: 1.1;
+  background-color: rgba(64, 166, 93);
+  border: 4px solid rgb(102, 204, 51);
+
+}
+
+ul li p,a {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+}
+ ul li a {
+  text-decoration: none;
+
+ }
+
+ ul li button:hover {
+  background-color: green;
+  text-decoration: underline;
+  color: white;
+
+ }
+.profile {
+  color: black;
+  margin-right: 10px;
+} 
